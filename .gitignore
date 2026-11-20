@@ -1,0 +1,41 @@
+# Composer dependencies
+/vendor/
+composer.phar
+
+# Environment & local configuration
+.env
+.env.local
+.env.*.local
+*.local.php
+
+# Build artifacts & frontend dependencies (if using Node/Vite/Webpack)
+/node_modules/
+/public/build/
+/public/hot/
+/public/storage
+
+# Logs, caches & temporary files
+*.log
+*.cache
+/cache/
+/logs/
+/tmp/
+/temp/
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Testing & code coverage
+/coverage/
+/clover.xml
+/.phpunit.result.cache
+/vendor/bin/
+
+# IDE & OS files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db

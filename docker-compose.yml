@@ -15,12 +15,12 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-    #  - ./config/esquema.sql:/docker-entrypoint-initdb.d/esquema.sql
+      - ./config/esquema.sql:/docker-entrypoint-initdb.d/esquema.sql
 
   adminer:
     image: adminer:latest
     ports:
-      - "8081:8080"
+      - "8082:8080"
     depends_on:
       - db
 
